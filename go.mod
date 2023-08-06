@@ -1,3 +1,3 @@
 module go.innotegrity.dev/errorx
 
-go 1.20
+go 1.18
