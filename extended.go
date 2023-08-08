@@ -12,5 +12,5 @@ type ExtendedError interface {
 	Code() int
 
 	// Properties returns any additional properties which should used when logging the error.
-	Properties() map[string]interface{}
+	Properties() map[string]any
 }

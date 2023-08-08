@@ -1,4 +1,4 @@
-// Package errorx provides simple error handling primitives.
+// Package errorx provides extended error handling primitives.
 //
 // The traditional error handling idiom in Go is roughly akin to
 //
