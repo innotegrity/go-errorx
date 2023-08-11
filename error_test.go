@@ -10,6 +10,8 @@ import (
 	"go.innotegrity.dev/errorx"
 )
 
+// TODO: implement testing and benchmarks
+
 type GenericError struct{ errorx.BaseError }
 
 func NewGenericError(err error) GenericError {
