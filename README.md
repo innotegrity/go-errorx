@@ -36,7 +36,7 @@
 
 ## 👁️ Overview
 
-`go-errorx` provides extended error logging for Go applications and packages. It implements the `error` interface and includes additional features like error codes as well as display errors vs internal errors and properties.
+`go-errorx` provides extended error logging for Go applications and packages. It extends the `error` interface by adding the ability to include an error code, nested errors, and any attributes associated with the error.
 
 Please review the [module documentation](https://pkg.go.dev/go.innotegrity.dev/errorx) for details on how to properly the functions and classes contained in this module.
 

@@ -8,14 +8,8 @@ and utilizes [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0
 
 No unreleased changes
 
-## v1.0.1 (Released 2023-08-07)
+## v1.0.10 (Released 2023-08-11)
 
 ### Notes
 
-* Replaced `interface{}` references with `any` which is supported with go 1.18 and later
-  
-## v1.0.0 (Released 2023-08-06)
-
-### Notes
-
-* Initial release of the module
+* Initial stable release of the module
