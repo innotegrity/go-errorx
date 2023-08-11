@@ -8,7 +8,7 @@ and utilizes [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0
 
 No unreleased changes
 
-## v1.0.10 (Released 2023-08-11)
+## v1.0.15 (Released 2023-08-11)
 
 ### Notes
 

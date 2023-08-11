@@ -44,7 +44,7 @@ type BaseError struct {
 func (b BaseError) Attr(key string) (any, error) {
 	v, ok := b.ErrAttrs[key]
 	if !ok {
-		return "", fmt.Errorf("'%s': attribute not found", key)
+		return "", fmt.Errorf("%s: attribute not found", key)
 	}
 	return v, nil
 }
@@ -57,7 +57,7 @@ func (b BaseError) AttrDuration(key string) (time.Duration, error) {
 	}
 	t, ok := v.(time.Duration)
 	if !ok {
-		return time.Duration(0), fmt.Errorf("'%s': cannot convert attribute value to time.Duration", key)
+		return time.Duration(0), fmt.Errorf("%s: cannot convert attribute value to time.Duration", key)
 	}
 	return t, nil
 }
@@ -70,7 +70,7 @@ func (b BaseError) AttrInt(key string) (int, error) {
 	}
 	i, ok := v.(int)
 	if !ok {
-		return 0, fmt.Errorf("'%s': cannot convert attribute value to an int", key)
+		return 0, fmt.Errorf("%s: cannot convert attribute value to an int", key)
 	}
 	return i, nil
 }
@@ -83,7 +83,7 @@ func (b BaseError) AttrInt64(key string) (int64, error) {
 	}
 	i, ok := v.(int64)
 	if !ok {
-		return 0, fmt.Errorf("'%s': cannot convert attribute value to an int64", key)
+		return 0, fmt.Errorf("%s: cannot convert attribute value to an int64", key)
 	}
 	return i, nil
 }
@@ -104,7 +104,7 @@ func (b BaseError) AttrString(key string) (string, error) {
 	}
 	str, ok := v.(string)
 	if !ok {
-		return "", fmt.Errorf("'%s': cannot convert attribute value to a string", key)
+		return "", fmt.Errorf("%s: cannot convert attribute value to a string", key)
 	}
 	return str, nil
 }
@@ -117,7 +117,7 @@ func (b BaseError) AttrTime(key string) (time.Time, error) {
 	}
 	t, ok := v.(time.Time)
 	if !ok {
-		return time.Time{}, fmt.Errorf("'%s': cannot convert attribute value to time.Time", key)
+		return time.Time{}, fmt.Errorf("%s: cannot convert attribute value to time.Time", key)
 	}
 	return t, nil
 }
@@ -130,7 +130,7 @@ func (b BaseError) AttrUint(key string) (uint, error) {
 	}
 	i, ok := v.(uint)
 	if !ok {
-		return 0, fmt.Errorf("'%s': cannot convert attribute value to an uint", key)
+		return 0, fmt.Errorf("%s: cannot convert attribute value to an uint", key)
 	}
 	return i, nil
 }
@@ -143,7 +143,7 @@ func (b BaseError) AttrUint64(key string) (uint64, error) {
 	}
 	i, ok := v.(uint64)
 	if !ok {
-		return 0, fmt.Errorf("'%s': cannot convert attribute value to an uint64", key)
+		return 0, fmt.Errorf("%s: cannot convert attribute value to an uint64", key)
 	}
 	return i, nil
 }
